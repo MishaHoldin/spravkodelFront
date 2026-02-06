@@ -1,0 +1,155 @@
+<script setup lang="ts">
+// Приймаємо дані через пропси
+const props = defineProps({
+  data: {
+    type: Object,
+    required: true
+  }
+});
+
+const containerRef = ref(null);
+
+// Ініціалізація Swiper через composable
+const swiper = useSwiper(containerRef, {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    clickable: true,
+  },
+  breakpoints: {
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  },
+});
+
+// Допоміжний метод для отримання списку карток
+const reviewsList = computed(() => props.data?.card || []);
+</script>
+
+<template>
+  <section v-if="data" class="pt-[110px] pb-[80px] relative">
+    <h2
+      class="font-inter font-bold sm:text-[37px] tracking-[-0.03em] text-center text-[#fff] [text-shadow:-41px_-10px_19px_rgba(0,0,0,0.25)] sm:mb-12 mb-[35px]"
+    >
+      {{ data.title }}
+    </h2>
+
+    <div class="relative mx-auto px-12">
+      <ClientOnly>
+        <swiper-container ref="containerRef" :init="false">
+          <swiper-slide
+            v-for="(review, index) in reviewsList"
+            :key="index"
+            class="bg-[url('/Rectangle6.svg')] bg-no-repeat bg-contain bg-center sm:bg-center w-full"
+          >
+            <div
+              class="relative sm:min-h-[400px] flex flex-col items-center sm:justify-center px-[22px] pt-[22px] sm:pb-[22px] pb-[78px]"
+            >
+
+              
+              <div class="flex items-end gap-[30px]">
+                <NuxtImg src="/User Male.svg" alt="user" class="sm:w-[75px] w-[61px]" />
+                <div class="flex flex-col items-center">
+                  <div class="flex gap-1">
+                    <NuxtImg
+                      v-for="i in 5"
+                      :key="i"
+                      src="/Star 1.svg"
+                      alt="star"
+                      class="sm:w-[18px] w-[13px]"
+                    />
+                  </div>
+                  <h3
+                    class="font-inter font-bold sm:text-[24px] text-[16px] text-center text-[#fff]"
+                  >
+                    {{ review.name }}
+                  </h3>
+                </div>
+              </div>
+
+              <p
+                class="font-epilogue font-normal sm:text-[16px] text-[14px] text-center text-[#fff] leading-tight opacity-90 sm:pt-[30px] pt-[18px]"
+              >
+                {{ review.description }}
+              </p>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </ClientOnly>
+
+      <button
+        @click="swiper.prev()"
+        class="absolute sm:left-[-3%] left-[10px] top-1/2 -translate-y-1/2 z-10 hover:scale-110 transition-transform"
+      >
+        <NuxtImg src="/Arrow 4.svg" alt="arrow" class="sm:w-[45px] w-[33px]" />
+      </button>
+
+      <button
+        @click="swiper.next()"
+        class="absolute sm:right-[-3%] right-[10px] top-1/2 -translate-y-1/2 z-10 hover:scale-110 transition-transform"
+      >
+        <NuxtImg src="/Arrow 3.svg" alt="arrow" class="sm:w-[45px] w-[33px]" />
+      </button>
+    </div>
+
+    <div class="absolute w-full sm:bottom-[-4%] bottom-[-6%] max-w-[1920px] left-0 overflow-hidden">
+      <NuxtImg class="w-full object-cover" src="/Vector 27.svg" alt="line"/>
+    </div>
+  </section>
+</template>
+
+<style scoped>
+swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+/* Стилізація точок пагінації через Shadow Parts */
+swiper-container::part(pagination) {
+  position: relative;
+  margin-top: 40px;
+}
+
+swiper-container::part(bullet) {
+  width: 25.6px;
+  height: 25.6px;
+  background-color: #a3a3a3; /* Світло-сірий для неактивних */
+  opacity: 1;
+}
+
+swiper-container::part(bullet-active) {
+  background-color: #33312e; /* Темний для активної точки */
+  width: 25.6px;
+  height: 25.6px;
+}
+
+/* Приховуємо стандартні елементи */
+swiper-container::part(button-prev),
+swiper-container::part(button-next) {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  swiper-container::part(bullet) {
+    width: 17px;
+    height: 17px;
+  }
+
+  swiper-container::part(bullet-active) {
+    width: 17px;
+    height: 17px;
+  }
+  swiper-container::part(pagination) {
+    position: relative;
+    margin-top: 0px;
+    padding-top: 25px;
+  }
+}
+
+/* Приховуємо стандартні елементи */
+swiper-container::part(button-prev),
+swiper-container::part(button-next) {
+  display: none;
+}
+</style>

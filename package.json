@@ -1,0 +1,28 @@
+{
+  "name": "dovidka_front",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/image": "2.0.0",
+    "@nuxt/scripts": "^0.13.2",
+    "@nuxtjs/google-fonts": "3.2.0",
+    "@nuxtjs/i18n": "10.2.1",
+    "@nuxtjs/strapi": "2.1.1",
+    "@nuxtjs/tailwindcss": "6.14.0",
+    "nuxt": "^4.3.0",
+    "nuxt-swiper": "2.0.1",
+    "vue": "^3.5.27",
+    "vue-router": "^4.6.4"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610",
+  "devDependencies": {
+    "lightningcss": "^1.31.1"
+  }
+}

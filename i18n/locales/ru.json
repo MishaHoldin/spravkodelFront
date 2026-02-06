@@ -1,0 +1,126 @@
+{
+  "contact": {
+    "title": "Skontaktuj się z nami",
+    "description": "Chętnie odpowiemy na Twoje pytania i uwagi – śmiało zostaw je poniżej. Jesteśmy zawsze otwarci na nowe pomysły oraz współpracę z instytucjami kultury i środowiskiem akademickim, szczególnie przy projektach wystawienniczych.",
+
+    "emailLabel": "E-mail",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adres",
+
+    "form": {
+      "nameLabel": "Imię",
+      "namePlaceholder": "Wpisz swoje imię",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "Wpisz swój e-mail",
+      "messageLabel": "Wiadomość",
+      "messagePlaceholder": "Napisz swoją wiadomość...",
+      "checkboxTextPart1": "Wysyłając formularz, akceptujesz",
+      "checkboxTextAnd": "oraz",
+      "terms": "Regulamin",
+      "privacy": "Politykę prywatności",
+      "submit": "Wyślij wiadomość"
+    },
+
+    "address": "UL. Hoża 29, 00–521 Warszawa, Polska"
+  },
+    "thankYou": {
+    "title": "Dziękujemy za\nkontakt.",
+    "text1": "Twoja wiadomość została pomyślnie wysłana i bardzo doceniamy Twoje zainteresowanie naszą działalnością. Nasz zespół przejrzy Twoje zgłoszenie i skontaktuje się z Tobą tak szybko, jak to możliwe.",
+    "text2": "Jesteśmy wdzięczni za Twoje wsparcie i ciekawość — razem możemy dalej budować wartościowe kulturowe relacje.",
+    "button": "Powrót na stronę główną"
+  },
+  "terms": {
+    "lastUpdated": "Ostatnia aktualizacja:"
+  },
+   "artists": {
+    "title": "Artyści i dzieła sztuki",
+    "intro": "Witamy w edukacyjnym zasobie i cyfrowym archiwum poświęconym dziedzictwu ukraińskich artystów — ich życiorysom, twórczym drogom i pracom. To Twoja brama do świata ukraińskiej sztuki i jej twórców.",
+    "browse": "Przeglądaj artystów",
+    "all": "Wszyscy",
+    "showing": "Wyświetlono",
+    "artistsWord": "artystów",
+    "searchPlaceholder": "Wyszukaj po nazwisku artysty lub słowie kluczowym"
+  },
+    "artistsSearch": {
+    "searchPlaceholder": "Wyszukaj po nazwisku artysty lub słowie kluczowym",
+    "popular": "Popularne wyszukiwania",
+    "featured": "Polecani artyści",
+    "suggestions": "Sugestie",
+    "artists": "Artyści",
+    "browseAll": "Przeglądaj wszystkich artystów",
+    "noResults": "Brak wyników dla “{query}”.",
+    "viewAllPattern": "Zobacz wszystkich {count} artystów pasujących do “{query}”",
+    "populars": {
+      "painter": "Malarz",
+      "landscape": "Krajobraz",
+      "avantgarde": "Awangarda",
+      "marchuk": "Marchuk",
+      "oil": "Olej"
+    }
+  },
+  "footer": {
+    "address": "Warszawa, Polska",
+    "copyright": "© 2025 Barvy Art Foundation. Wszelkie prawa zastrzeżone.",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin",
+
+    "nav": {
+      "home": "Strona główna",
+      "artists": "Artyści i dzieła sztuki",
+      "about": "O nas",
+      "contact": "Kontakt"
+    }
+  },
+    "header": {
+    "nav": {
+      "artists": "Artyści i dzieła sztuki",
+      "about": "O nas",
+      "contact": "Kontakt"
+    }
+  },
+    "aboutSection": {
+    "learnMore": "Dowiedz się więcej o nas"
+  },
+    "cta": {
+    "contactButton": "Skontaktuj się z nami"
+  },
+    "exploreArtistsAbout": {
+    "description": "Na tej stronie zapraszamy wszystkich do odkrywania naszej sekcji „Artyści i dzieła sztuki” — rozwijającego się zasobu, który ma stać się najobszerniejszą platformą internetową poświęconą ukraińskim artystom. Oferuje szczegółowe informacje o twórcach i ich znaczących pracach.",
+    "button": "Przeglądaj artystów i dzieła"
+  },
+    "hero": {
+    "browseArtists": "Przeglądaj artystów",
+    "learnMore": "Dowiedz się więcej o nas"
+  },
+  "learnMore": "dowiedz się więcej",
+  "View": "Widok",
+  "ArtworksbyArtist": "Dzieła artysty",
+  "ArtworksbyArtist's": "Dzieła artysty",
+  "Artworks": "dzieła sztuki",
+  "seo": {
+    "index": {
+      "title": "Ukrainian & Eastern European Art  Barvy Art Foundation",
+      "description": "Barvy Art Foundation showcases and promotes 20th-century Eastern European art. Explore artists, exhibitions, and collections from Ukraine and beyond."
+    },
+    "artists": {
+      "title": "Ukrainian Artists & Artwork  Barvy Art Foundation",
+      "description": "Explore the lives and works of Ukrainian artists. Discover biographies, creative journeys, and artwork in this educational digital archive."
+    },
+    "contact": {
+      "title": "Contact Barvy Art Foundation  Ukrainian Art",
+      "description": "Get in touch with Barvy Art Foundation. Share questions, ideas, or collaboration proposals for exhibitions and projects on Ukrainian art."
+    },
+    "about": {
+      "title": "About Barvy Art Foundation  Ukrainian Art",
+      "description": "Barvy Art Foundation preserves and promotes 20th-century Ukrainian art. Learn about our mission, projects, and impact on artists and culture worldwide."
+    },
+    "privacy": {
+      "title": "Privacy Policy  Barvy Art Foundation",
+      "description": "Read the Privacy Policy of Barvy Art Foundation. Learn how we collect, use, and protect your personal data and information."
+    },
+    "terms": {
+      "title": "Terms and Conditions  Barvy Art Foundation",
+      "description": "Read the Terms and Conditions of Barvy Art Foundation. Understand the rules, intellectual property rights, and liability terms for using our website."
+    }
+  }
+}
