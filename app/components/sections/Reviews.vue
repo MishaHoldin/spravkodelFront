@@ -3,8 +3,8 @@
 const props = defineProps({
   data: {
     type: Object,
-    required: true
-  }
+    required: true,
+  },
 });
 
 const containerRef = ref(null);
@@ -30,26 +30,33 @@ const reviewsList = computed(() => props.data?.card || []);
 <template>
   <section v-if="data" class="pt-[110px] pb-[80px] relative">
     <h2
-      class="font-inter font-bold sm:text-[37px] tracking-[-0.03em] text-center text-[#fff] [text-shadow:-41px_-10px_19px_rgba(0,0,0,0.25)] sm:mb-12 mb-[35px]"
+      class="font-inter font-bold lg:text-[37px] tracking-[-0.03em] text-center text-[#fff] [text-shadow:-41px_-10px_19px_rgba(0,0,0,0.25)] lg:mb-12 mb-[35px]"
     >
       {{ data.title }}
     </h2>
 
     <div class="relative mx-auto px-12">
       <ClientOnly>
-        <swiper-container ref="containerRef" :init="false">
+        <swiper-container ref="containerRef">
           <swiper-slide
             v-for="(review, index) in reviewsList"
             :key="index"
-            class="bg-[url('/Rectangle6.svg')] bg-no-repeat bg-contain bg-center sm:bg-center w-full"
+            :slides-per-view="'auto'"
+            :space-between="16"
+            :free-mode="true"
+            :mousewheel="{ forceToAxis: true }"
+            :grab-cursor="true"
+            class="bg-[url('/Rectangle6.svg')] bg-no-repeat bg-contain bg-center lg:bg-center w-full"
           >
             <div
-              class="relative sm:min-h-[400px] flex flex-col items-center sm:justify-center px-[22px] pt-[22px] sm:pb-[22px] pb-[78px]"
+              class="relative lg:min-h-[400px] flex flex-col items-center lg:justify-center px-[22px] pt-[22px] lg:pb-[22px] pb-[78px]"
             >
-
-              
               <div class="flex items-end gap-[30px]">
-                <NuxtImg src="/User Male.svg" alt="user" class="sm:w-[75px] w-[61px]" />
+                <NuxtImg
+                  src="/User Male.svg"
+                  alt="user"
+                  class="lg:w-[75px] w-[61px]"
+                />
                 <div class="flex flex-col items-center">
                   <div class="flex gap-1">
                     <NuxtImg
@@ -57,11 +64,11 @@ const reviewsList = computed(() => props.data?.card || []);
                       :key="i"
                       src="/Star 1.svg"
                       alt="star"
-                      class="sm:w-[18px] w-[13px]"
+                      class="lg:w-[18px] w-[13px]"
                     />
                   </div>
                   <h3
-                    class="font-inter font-bold sm:text-[24px] text-[16px] text-center text-[#fff]"
+                    class="font-inter font-bold lg:text-[24px] text-[16px] text-center text-[#fff]"
                   >
                     {{ review.name }}
                   </h3>
@@ -69,7 +76,7 @@ const reviewsList = computed(() => props.data?.card || []);
               </div>
 
               <p
-                class="font-epilogue font-normal sm:text-[16px] text-[14px] text-center text-[#fff] leading-tight opacity-90 sm:pt-[30px] pt-[18px]"
+                class="font-epilogue font-normal lg:text-[16px] text-[14px] text-center text-[#fff] leading-tight opacity-90 lg:pt-[30px] pt-[18px]"
               >
                 {{ review.description }}
               </p>
@@ -80,21 +87,23 @@ const reviewsList = computed(() => props.data?.card || []);
 
       <button
         @click="swiper.prev()"
-        class="absolute sm:left-[-3%] left-[10px] top-1/2 -translate-y-1/2 z-10 hover:scale-110 transition-transform"
+        class="absolute lg:left-[-3%] left-[10px] top-1/2 -translate-y-1/2 z-10 hover:scale-110 transition-transform"
       >
-        <NuxtImg src="/Arrow 4.svg" alt="arrow" class="sm:w-[45px] w-[33px]" />
+        <NuxtImg src="/Arrow 4.svg" alt="arrow" class="lg:w-[45px] w-[33px]" />
       </button>
 
       <button
         @click="swiper.next()"
-        class="absolute sm:right-[-3%] right-[10px] top-1/2 -translate-y-1/2 z-10 hover:scale-110 transition-transform"
+        class="absolute lg:right-[-3%] right-[10px] top-1/2 -translate-y-1/2 z-10 hover:scale-110 transition-transform"
       >
-        <NuxtImg src="/Arrow 3.svg" alt="arrow" class="sm:w-[45px] w-[33px]" />
+        <NuxtImg src="/Arrow 3.svg" alt="arrow" class="lg:w-[45px] w-[33px]" />
       </button>
     </div>
 
-    <div class="absolute w-full sm:bottom-[-4%] bottom-[-6%] max-w-[1920px] left-0 overflow-hidden">
-      <NuxtImg class="w-full object-cover" src="/Vector 27.svg" alt="line"/>
+    <div
+      class="absolute w-full lg:bottom-[-4%] bottom-[-6%] max-w-[1920px] left-0 overflow-hidden"
+    >
+      <NuxtImg class="w-full object-cover" src="/Vector 27.svg" alt="line" />
     </div>
   </section>
 </template>
