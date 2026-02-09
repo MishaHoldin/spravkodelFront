@@ -1,20 +1,9 @@
 <template>
   <div v-if="pageData">
-    <noscript>
-      <iframe 
-        src="https://www.googletagmanager.com/ns.html?id=GTM-TPHNPB5S"
-        height="0" 
-        width="0" 
-        style="display:none;visibility:hidden"
-      ></iframe>
-    </noscript>
-
     <LayoutAppHeader :links="pageData.Header" />
-
     <main>
         <NuxtPage />
      </main>
-
     <LayoutAppFooter :data="pageData.footer" />
   </div>
 </template>
