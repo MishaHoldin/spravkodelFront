@@ -2,13 +2,13 @@
   <div class="container">
     <SectionsHero :data="hero" />
 
-    <SectionsServices id="services" :data="services" />
+    <!-- <SectionsServices id="services" :data="services" />
 
     <SectionsWorkflow :data="workflow" />
     
     <SectionsAdvantages id="advantages" :data="advantages" />
 
-    <SectionsReviews id="reviews" :data="reviews" />
+    <SectionsReviews id="reviews" :data="reviews" /> -->
   </div>
 </template>
 
