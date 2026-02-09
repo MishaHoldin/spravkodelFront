@@ -46,7 +46,7 @@
 
     <div class="mt-[43px] px-[23px] lg:px-0">
       <h3
-        class="relative inline-block font-inter font-bold lg:text-[25px] text-[15px] tracking-[-0.03em] text-[#fff] after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:w-full after:h-[12px] after:bg-[url('/Vector 28.svg')] after:bg-no-repeat after:bg-contain"
+        class="relative inline-block font-inter font-bold lg:text-[25px] text-[15px] tracking-[-0.03em] text-[#fff] after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:w-full after:h-[12px] after:bg-[url('/img/Vector 28.svg')] after:bg-no-repeat after:bg-contain"
       >
         {{ data.docs }}
       </h3>

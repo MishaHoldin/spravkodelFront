@@ -46,7 +46,7 @@ const reviewsList = computed(() => props.data?.card || []);
             :free-mode="true"
             :mousewheel="{ forceToAxis: true }"
             :grab-cursor="true"
-            class="bg-[url('/Rectangle6.svg')] bg-no-repeat bg-contain bg-center lg:bg-center w-full"
+            class="bg-[url('/img/Rectangle6.svg')] bg-no-repeat bg-contain bg-center lg:bg-center w-full"
           >
             <div
               class="relative lg:min-h-[400px] flex flex-col items-center lg:justify-center px-[22px] pt-[22px] lg:pb-[22px] pb-[78px]"
