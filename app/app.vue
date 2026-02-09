@@ -9,13 +9,13 @@
 </template>
 
 <script setup>
+import '~/assets/css/main.css'
 import { MAIN } from '~/queries/main'
 const { locale, locales } = useI18n()
 const graphql = useStrapiGraphQL()
 
 const currentLocaleObj = computed(() => locales.value.find(l => l.code === locale.value));
 const apiLocale = computed(() => currentLocaleObj.value?.language || locale.value);
-
 // Вшиваем GTM и SEO напрямую
 useHead({
   link: [

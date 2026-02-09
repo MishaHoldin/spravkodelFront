@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
-  css: ['~/assets/css/main.css'],
+  // css: ['~/assets/css/main.css'],
 
   modules: [
     '@nuxtjs/tailwindcss',
@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     'nuxt-swiper',
     '@nuxtjs/i18n',
     '@nuxtjs/strapi',
+    'nuxt-vitalizer'
   ],
 
   // Налаштування Nuxt 4 (структура папок)
@@ -129,4 +130,9 @@ export default defineNuxtConfig({
   features: {
     inlineStyles: true, // Инлайнит критический CSS для ускорения LCP
   },
+  vitalizer: {
+    // Remove the render-blocking entry CSS
+    disableStylesheets: 'entry',
+    disablePrefetchLinks: true
+  }
 })
