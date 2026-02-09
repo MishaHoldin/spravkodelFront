@@ -127,8 +127,8 @@ export default defineNuxtConfig({
     inlineStyles: true, // Инлайнит критический CSS для ускорения LCP
   },
   vitalizer: {
-    // Remove the render-blocking entry CSS
     disableStylesheets: 'entry',
-    disablePrefetchLinks: true
-  }
+    disablePrefetchLinks: true,
+    disablePreloadLinks: true,
+  },
 })
