@@ -110,6 +110,9 @@ export default defineNuxtConfig({
     strapi: {
       baseURL: process.env.STRAPI_URL,
     },
+    ipx: {
+      maxAge: 31536000, // Cache for 1 year
+    },
   },
   features: {
     inlineStyles: true, // Инлайнит критический CSS для ускорения LCP
