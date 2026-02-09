@@ -14,12 +14,12 @@
       <div
         v-for="(card, index) in data.card"
         :key="index"
-        class="relative flex items-center justify-center p-[40px] lg:max-w-[600px] max-w-[480px] mx-auto"
+        class="relative flex items-center justify-center p-[40px] lg:max-w-[600px] max-w-[480px] mx-auto "
       >
         <NuxtImg
           fetchpriority=high
           src="/img/Vector 2.svg"
-          class="absolute lg:w-full w-[112%] max-w-[550px] z-0 object-cover"
+          class="absolute lg:w-full w-[112%] max-w-[550px] z-0 object-cover sm:block hidden"
           alt="line"
         />
 
