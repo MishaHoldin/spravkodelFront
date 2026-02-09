@@ -17,6 +17,7 @@
         class="relative flex items-center justify-center p-[40px] lg:max-w-[600px] max-w-[480px] mx-auto"
       >
         <NuxtImg
+          fetchpriority=high
           src="/Vector 2.svg"
           class="absolute lg:w-full w-[112%] max-w-[550px] z-0 object-cover"
           alt="line"
@@ -42,7 +43,7 @@
           </div>
 
           <p
-            class="font-epilogue font-normal lg:text-[19px] text-[11px] tracking-[-0.03em] text-[#fff] leading-snug lg:max-w-[470px] max-w-[223px] lg:pl-[35px] pl-[15px]"
+            class="font-epilogue font-normal lg:text-[19px] text-[11px] tracking-[-0.03em] text-[#fff] leading-snug lg:max-w-[460px] max-w-[223px] lg:pl-[35px] pl-[15px]"
           >
             {{ card.subtitle }}
           </p>
@@ -84,7 +85,7 @@
       </div>
     </div>
 
-    <div class="absolute w-full lg:bottom-[-14%] bottom-[-5%] max-w-[1920px]">
+    <div class="absolute w-full lg:bottom-[-14%] bottom-[-2%] max-w-[1920px]">
       <NuxtImg class="w-full object-cover" src="/Vector 24.svg" alt="line" />
     </div>
   </div>

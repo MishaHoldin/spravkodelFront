@@ -47,12 +47,12 @@
           class="flex lg:gap-[19px] gap-[10px] items-center"
         >
           <NuxtImg
-            class="object-cover lg:w-[42px] w-[17px] lg:h-[34px]"
+            class="object-cover lg:w-[42px] w-[28px] lg:h-[34px]"
             :src="baseUrl + item.icon.url"
             :alt="item.name"
           />
           <p
-            class="font-turret font-bold lg:text-[18px] text-[12px] text-center text-[#fff] flex lg:max-w-[126px] max-w-[62px]"
+            class="font-turret font-bold lg:text-[18px] text-[12px] text-center text-[#fff] flex lg:max-w-[126px] max-w-[70px]"
           >
             {{ item.name }}
           </p>
