@@ -20,6 +20,10 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    routeRules: {
+      '/img/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+      '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+    },
     externals: {
       inline: ['css-tree'],
     },
@@ -33,8 +37,10 @@ export default defineNuxtConfig({
       // 'Turret Road': [700],
       // 'Road Rage': [400],
     },
-    display: 'swap',
-    download: true
+      preload: false,
+      prefetch: false,
+      display: 'swap',
+      download: true
   },
   app: {
     head: {
