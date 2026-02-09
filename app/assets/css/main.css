@@ -2,16 +2,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Подключение Inter */
+@font-face {
+  font-family: 'Inter';
+  src: url('~/assets/fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('~/assets/fonts/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('~/assets/fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Подключение Epilogue */
+@font-face {
+  font-family: 'Epilogue';
+  src: url('~/assets/fonts/Epilogue-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @layer base {
-  :root {
-    --font-family: "Inter", sans-serif;
-    --second-family: "Epilogue", sans-serif;
-    --third-family: "Fauna One", sans-serif;
-    --font3: "Corben", sans-serif;
-    --font4: "Turret Road", sans-serif;
-    --font5: "Road Rage", sans-serif;
-  }
   body {
     background: linear-gradient(80deg, #36302c 0%, #807b78 100%);
     /* mix-blend-mode: color; */

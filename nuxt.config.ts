@@ -7,7 +7,6 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts',
     '@nuxt/image',
     'nuxt-swiper',
     '@nuxtjs/i18n',
@@ -28,21 +27,6 @@ export default defineNuxtConfig({
       '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
       '/favicon.ico': { headers: { 'cache-control': 'public, max-age=604800' } },
     },
-  },
-  googleFonts: {
-    families: {
-      'Inter': [500, 700],
-      'Epilogue': [400],
-      // 'Fauna One': [400],
-      // 'Corben': [400],
-      // 'Turret Road': [700],
-      // 'Road Rage': [400],
-    },
-    display: 'swap',   
-    download: true,   
-    preconnect: true,
-    prefetch: true,    
-    preload: true,
   },
   app: {
     head: {
