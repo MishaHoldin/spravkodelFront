@@ -23,6 +23,10 @@ export default defineNuxtConfig({
     externals: {
       inline: ['css-tree'],
     },
+    routeRules: {
+      '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
+      '/favicon.ico': { headers: { 'cache-control': 'public, max-age=604800' } },
+    },
   },
   googleFonts: {
     families: {
@@ -33,10 +37,11 @@ export default defineNuxtConfig({
       // 'Turret Road': [700],
       // 'Road Rage': [400],
     },
-      preload: false,
-      prefetch: false,
-      display: 'swap',
-      download: true
+    display: 'swap',   
+    download: true,   
+    preconnect: true,
+    prefetch: true,    
+    preload: true,
   },
   app: {
     head: {
@@ -66,7 +71,8 @@ export default defineNuxtConfig({
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-TPHNPB5S');
         `,
-        type: "text/javascript",
+          type: "text/javascript",
+        defer: true,
       },
       ],
     //   noscript: [
@@ -119,5 +125,8 @@ export default defineNuxtConfig({
     strapi: {
       baseURL: process.env.STRAPI_URL,
     },
+  },
+  features: {
+    inlineStyles: true, // Инлайнит критический CSS для ускорения LCP
   },
 })
