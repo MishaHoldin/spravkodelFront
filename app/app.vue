@@ -30,10 +30,10 @@ const apiLocale = computed(() => currentLocaleObj.value?.language || locale.valu
 // Вшиваем GTM и SEO напрямую
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://spravkodel.com.ua/' },
-    { rel: 'alternate', hreflang: 'uk', href: 'https://spravkodel.com.ua/' },
-    { rel: 'alternate', hreflang: 'ru', href: 'https://spravkodel.com.ua/ru' },
-    { rel: 'alternate', hreflang: 'x-default', href: 'https://spravkodel.com.ua/' }
+    { rel: 'canonical', href: 'https://spravkodel.net/' },
+    { rel: 'alternate', hreflang: 'uk', href: 'https://spravkodel.net/' },
+    { rel: 'alternate', hreflang: 'ru', href: 'https://spravkodel.net/ru' },
+    { rel: 'alternate', hreflang: 'x-default', href: 'https://spravkodel.net/' }
   ],
 })
 
