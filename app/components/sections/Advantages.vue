@@ -28,7 +28,7 @@
       <div
         v-for="(item, index) in data.card"
         :key="index"
-        class="flex flex-col items-center jus bg-[url('/img/paper.svg')] sm:bg-cover bg-contain bg-center h-auto bg-no-repeat lg:p-[64px_38px_57px_38px] p-[42px_17px_51px_17px] w-full max-w-[405px] lg:h-auto sm:h-[420px] justify-center"
+        class="flex flex-col items-center bg-[url('https://admin.spravkodel.net/uploads/paper_a9bf45588f.svg')] sm:bg-cover bg-contain bg-center h-auto bg-no-repeat lg:p-[64px_38px_57px_38px] p-[42px_17px_51px_17px] w-full max-w-[405px] lg:h-auto sm:h-[420px] justify-center"
       >
         <NuxtImg
           v-if="item.img"
