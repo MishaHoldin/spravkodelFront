@@ -11,20 +11,8 @@ export default defineNuxtConfig({
     'nuxt-swiper',
     '@nuxtjs/i18n',
     '@nuxtjs/strapi',
-    '@nuxt/fonts',
   ],
-  fonts: {
-    // Указываем, что приоритет всегда у локальных файлов
-    priority: ['local'], 
-    families: [
-      { name: 'Inter', provider: 'local' },
-      { name: 'Epilogue', provider: 'local' }
-    ],
-    defaults: {
-      preload: true,
-      display: 'swap'
-    }
-  },
+
   // Налаштування Nuxt 4 (структура папок)
   future: {
     compatibilityVersion: 4,
