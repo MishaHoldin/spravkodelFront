@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     'nuxt-swiper',
     '@nuxtjs/i18n',
     '@nuxtjs/strapi',
-    'nuxt-vitalizer',
     '@nuxt/fonts',
   ],
   fonts: {
@@ -126,9 +125,5 @@ export default defineNuxtConfig({
   features: {
     inlineStyles: true, // Инлайнит критический CSS для ускорения LCP
   },
-  vitalizer: {
-    disableStylesheets: 'entry',
-    disablePrefetchLinks: true,
-    disablePreloadLinks: true,
-  },
+
 })
