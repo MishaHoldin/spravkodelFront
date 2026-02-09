@@ -15,7 +15,7 @@
           v-for="i in 5"
           :key="i"
           class="lg:w-[29px] w-[10px]"
-          src="/Star 1.svg"
+          src="/img/Star 1.svg"
           alt="star"
         />
       </div>
@@ -54,7 +54,7 @@
     <div
       class="absolute w-full lg:bottom-[-10%] bottom-[-6%] max-w-[1920px] left-0 overflow-hidden"
     >
-      <NuxtImg class="w-full object-cover" src="/Vector 19.svg" alt="line" />
+      <NuxtImg class="w-full object-cover" src="/img/Vector 19.svg" alt="line" />
     </div>
   </div>
 </template>

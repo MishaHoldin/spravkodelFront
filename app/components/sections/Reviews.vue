@@ -53,7 +53,7 @@ const reviewsList = computed(() => props.data?.card || []);
             >
               <div class="flex items-end gap-[30px]">
                 <NuxtImg
-                  src="/User Male.svg"
+                  src="/img/User Male.svg"
                   alt="user"
                   class="lg:w-[75px] w-[61px]"
                 />
@@ -62,7 +62,7 @@ const reviewsList = computed(() => props.data?.card || []);
                     <NuxtImg
                       v-for="i in 5"
                       :key="i"
-                      src="/Star 1.svg"
+                      src="/img/Star 1.svg"
                       alt="star"
                       class="lg:w-[18px] w-[13px]"
                     />
@@ -89,21 +89,21 @@ const reviewsList = computed(() => props.data?.card || []);
         @click="swiper.prev()"
         class="absolute lg:left-[-3%] left-[10px] top-1/2 -translate-y-1/2 z-10 hover:scale-110 transition-transform"
       >
-        <NuxtImg src="/Arrow 4.svg" alt="arrow" class="lg:w-[45px] w-[33px]" />
+        <NuxtImg src="/img/Arrow 4.svg" alt="arrow" class="lg:w-[45px] w-[33px]" />
       </button>
 
       <button
         @click="swiper.next()"
         class="absolute lg:right-[-3%] right-[10px] top-1/2 -translate-y-1/2 z-10 hover:scale-110 transition-transform"
       >
-        <NuxtImg src="/Arrow 3.svg" alt="arrow" class="lg:w-[45px] w-[33px]" />
+        <NuxtImg src="/img/Arrow 3.svg" alt="arrow" class="lg:w-[45px] w-[33px]" />
       </button>
     </div>
 
     <div
       class="absolute w-full lg:bottom-[-4%] bottom-[-6%] max-w-[1920px] left-0 overflow-hidden"
     >
-      <NuxtImg class="w-full object-cover" src="/Vector 27.svg" alt="line" />
+      <NuxtImg class="w-full object-cover" src="/img/Vector 27.svg" alt="line" />
     </div>
   </section>
 </template>

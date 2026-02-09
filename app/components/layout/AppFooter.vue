@@ -26,7 +26,7 @@
       >
         <NuxtImg
           class="object-contain lg:w-[34px] w-[17px] h-[34px]"
-          src="/Telegram App.svg"
+          src="/img/Telegram App.svg"
           alt="telegram"
         />
         Telegram
@@ -37,7 +37,7 @@
       >
         <NuxtImg
           class="object-contain lg:w-[34px] w-[17px] h-[34px]"
-          src="/Phone.svg"
+          src="/img/Phone.svg"
           alt="phone"
         />
         Зателефонувати

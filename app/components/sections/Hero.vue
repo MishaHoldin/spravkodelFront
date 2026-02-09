@@ -96,7 +96,7 @@
       <div
         class="absolute lg:bottom-[1%] bottom-[6%] lg:w-full w-[150%] max-w-[1920px]"
       >
-        <NuxtImg fetchpriority=high src="/Vector 23.svg" class="w-full" alt="line" />
+        <NuxtImg fetchpriority=high src="/img/Vector 23.svg" class="w-full" alt="line" />
       </div>
     </div>
 

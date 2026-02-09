@@ -40,7 +40,7 @@
     </div>
 
     <div class="absolute w-full bottom-0">
-      <NuxtImg class="w-full" alt="line" src="/Vector 25.svg" />
+      <NuxtImg class="w-full" alt="line" src="/img/Vector 25.svg" />
     </div>
   </div>
 </template>
