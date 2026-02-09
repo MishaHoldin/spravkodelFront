@@ -2,13 +2,10 @@
   <div class="container">
     <SectionsHero :data="hero" />
 
-    <!-- <SectionsServices id="services" :data="services" />
-
-    <SectionsWorkflow :data="workflow" />
-    
-    <SectionsAdvantages id="advantages" :data="advantages" />
-
-    <SectionsReviews id="reviews" :data="reviews" /> -->
+    <LazySectionsServices id="services" :data="services" v-if="services" />
+    <LazySectionsWorkflow :data="workflow" v-if="workflow" />
+    <LazySectionsAdvantages id="advantages" :data="advantages" v-if="advantages" />
+    <LazySectionsReviews id="reviews" :data="reviews" v-if="reviews" />
   </div>
 </template>
 

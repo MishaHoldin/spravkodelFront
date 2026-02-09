@@ -4,7 +4,7 @@
     <main>
         <NuxtPage />
      </main>
-    <LayoutAppFooter :data="pageData.footer" />
+    <LazyLayoutAppFooter :data="pageData.footer" />
   </div>
 </template>
 
