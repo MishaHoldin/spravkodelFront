@@ -69,14 +69,14 @@ export default defineNuxtConfig({
         type: "text/javascript",
       },
       ],
-      noscript: [
-      {
-        innerHTML: `
-          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPHNPB5S"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        `,
-      },
-    ],
+    //   noscript: [
+    //   {
+    //     innerHTML: `
+    //       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPHNPB5S"
+    //       height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    //     `,
+    //   },
+    // ],
     },
 
   },

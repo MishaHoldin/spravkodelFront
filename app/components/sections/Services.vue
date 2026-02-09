@@ -19,7 +19,7 @@
         <NuxtImg
           fetchpriority=high
           src="/Vector 2.svg"
-          class="absolute lg:w-full w-[112%] max-w-[550px] z-0 object-cover"
+          class="absolute lg:w-full w-[112%] max-w-[550px] z-0 object-cover sm:block hidden"
           alt="line"
         />
 
