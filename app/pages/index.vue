@@ -22,7 +22,7 @@ const { data: pageData, error } = useAsyncData(
   `home-${apiLocale.value}`,
   async () => {
     const response = await graphql(MAIN, { locale: apiLocale.value });
-    return response.data.main; // Упрощаем структуру здесь
+    return response.data.main;
   },
   { watch: [locale] }
 );
