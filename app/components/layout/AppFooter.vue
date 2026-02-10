@@ -19,29 +19,37 @@
     </h2>
 
     <div
-      class="flex lg:justify-start justify-center lg:gap-[98px] gap-[47px] lg:mt-[43px] mt-[64px]"
+      class="flex lg:justify-start justify-center lg:gap-[98px] gap-[47px] lg:mt-[43px] mt-[25px] z-10 relative"
     >
-      <button
-        class="lg:max-w-max max-w-[107px] w-full rounded-[85px] bg-[#60606082] shadow-[-24px_0_12px_0_rgba(0,0,0,0.25)] flex items-center justify-center font-inter font-bold lg:text-[24px] text-[11px] tracking-[-0.03em] text-center text-[#fff] lg:gap-[16px] gap-[8px] lg:p-[25px_36px_20px_27px] p-[10px_10px_10px_12px]"
+      <a
+        v-if="btns.btns"
+        :href="'https://t.me/' + btns.btns.btnLink?.replace('@', '')"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="lg:max-w-max max-w-[107px] w-full rounded-[85px] bg-[#60606082] shadow-[-24px_0_12px_0_rgba(0,0,0,0.25)] flex items-center justify-center font-inter font-bold lg:text-[24px] text-[11px] tracking-[-0.03em] text-center text-[#fff] lg:gap-[16px] gap-[8px] lg:p-[25px_36px_20px_27px] p-[10px_10px_10px_12px] hover:bg-[#707070] transition-colors"
       >
         <NuxtImg
+          v-if="btns.btns.btnIcon"
           class="object-contain lg:w-[34px] w-[17px] h-[34px]"
-          src="/img/Telegram App.svg"
-          alt="telegram"
+          :src="baseUrl + btns.btns.btnIcon.url"
+          :alt="btns.btns.btnText"
         />
-        Telegram
-      </button>
+        {{ btns.btns.btnText }}
+      </a>
 
-      <button
-        class="bg-[#ffffff82] rounded-[85px] w-full flex items-center lg:max-w-[304px] max-w-[146px] lg:gap-[9px] gap-[4px] shadow-[-27px_4px_13px_0_rgba(0,0,0,0.25)] font-inter font-bold lg:text-[24px] text-[11px] text-center text-[#343434] lg:p-[25px_36px_20px_27px] p-[10px_10px_10px_12px]"
+      <a
+        v-if="btns.btns2"
+        :href="'tel:' + btns.btns2.btnLink?.replace(/\s+/g, '')"
+        class="bg-[#ffffff82] rounded-[85px] w-full flex items-center lg:max-w-[304px] max-w-[146px] lg:gap-[9px] gap-[4px] shadow-[-27px_4px_13px_0_rgba(0,0,0,0.25)] font-inter font-bold lg:text-[24px] text-[11px] text-center text-[#343434] lg:p-[25px_36px_20px_27px] p-[10px_10px_10px_12px] hover:bg-[#ffffffa0] transition-colors"
       >
         <NuxtImg
+          v-if="btns.btns2.btnIcon"
           class="object-contain lg:w-[34px] w-[17px] h-[34px]"
-          src="/img/Phone.svg"
-          alt="phone"
+          :src="baseUrl + btns.btns2.btnIcon.url"
+          :alt="btns.btns2.btnText"
         />
-        Зателефонувати
-      </button>
+        {{ btns.btns2.btnText }}
+      </a>
     </div>
 
     <div class="mt-[43px] px-[23px] lg:px-0">
@@ -116,6 +124,10 @@
 <script setup>
 const props = defineProps({
   data: Object,
+  btns: {
+    type: Array,
+    default: () => [],
+  },
 });
 
 const config = useRuntimeConfig();

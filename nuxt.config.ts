@@ -3,8 +3,6 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-02-09',
   devtools: { enabled: true },
 
-  // css: ['~/assets/css/main.css'],
-
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
@@ -13,7 +11,6 @@ export default defineNuxtConfig({
     '@nuxtjs/strapi',
   ],
 
-  // Налаштування Nuxt 4 (структура папок)
   future: {
     compatibilityVersion: 4,
   },
@@ -50,8 +47,6 @@ export default defineNuxtConfig({
         {
             innerHTML: `
               window.addEventListener('load', function() {
-                // Загружаем GTM через 3 секунды после полной загрузки страницы
-                // или можно добавить слушатель на 'mousemove' / 'touchstart'
                 setTimeout(function() {
                   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -111,7 +106,7 @@ export default defineNuxtConfig({
     },
   },
   features: {
-    inlineStyles: true, // Инлайнит критический CSS для ускорения LCP
+    inlineStyles: true,
   },
 
 })
