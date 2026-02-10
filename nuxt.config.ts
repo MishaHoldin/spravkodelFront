@@ -26,21 +26,20 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'SPRAVKODEL — Оформлення фінансових довідок та документів онлайн',
+      // title: 'SPRAVKODEL — Оформлення фінансових довідок та документів онлайн',
 
-      meta: [
-        { 
-          name: 'description', 
-          content: 'Офіційне оформлення фінансових довідок, витягів та договорів без відвідувань. Швидка допомога з документами від ТОВ "ІНСАЙТ-ХОЛДИНГ".' 
-        },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { charset: 'utf-8' }
-      ],
+      // meta: [
+      //   { 
+      //     name: 'description', 
+      //     content: 'Офіційне оформлення фінансових довідок, витягів та договорів без відвідувань. Швидка допомога з документами від ТОВ "ІНСАЙТ-ХОЛДИНГ".' 
+      //   },
+      //   { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      //   { charset: 'utf-8' }
+      // ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ],
       htmlAttrs: {
-        lang: 'uk',
         style: 'scroll-behavior: smooth;',
       },
       script: [
@@ -53,7 +52,7 @@ export default defineNuxtConfig({
                   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                   })(window,document,'script','dataLayer','GTM-TPHNPB5S');
-                }, 6000); 
+                }); 
               });
             `,
             type: "text/javascript",
