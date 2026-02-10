@@ -71,6 +71,14 @@ export default defineNuxtConfig({
   i18n: {
     defaultLocale: 'ua',
     strategy: 'prefix_except_default',
+    // Настройки детектирования языка
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      alwaysRedirect: false, // Теперь это сработает правильно
+      fallbackLocale: 'ua',
+      redirectOn: 'root',
+    },
     locales: [
       {
         code: 'ru', 
