@@ -34,6 +34,19 @@ export default defineNuxtConfig({
       },
       script: [
         {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-XCQ3S6VLDM',
+          async: true,
+        },
+        {
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XCQ3S6VLDM');
+          `,
+          type: 'text/javascript',
+        },
+        {
           innerHTML: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
