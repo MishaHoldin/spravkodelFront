@@ -1,6 +1,6 @@
 <template>
   <div v-if="pageData">
-    <LayoutAppHeader :links="pageData.Header" />
+    <LazyLayoutAppHeader :links="pageData.Header" />
     <main>
       <NuxtPage />
     </main>
